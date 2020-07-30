@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net451</TargetFramework>
+      <RootNamespace>Impworks.Utils.Wpf</RootNamespace>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <Authors>Impworks</Authors>
+      <Company />
+      <Product>Impworks.Utils.Wpf</Product>
+      <PackageProjectUrl>https://github.com/impworks/utils.wpf</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/impworks/utils.wpf</RepositoryUrl>
+      <PackageTags>helpers, utils, converters, wpf</PackageTags>
+      <Description>A personal collection of helper utility methods for WPF projects.</Description>
+      <PackageId>Impworks.Utils.Wpf</PackageId>
+      <AssemblyName>Impworks.Utils.Wpf</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+</Project>
