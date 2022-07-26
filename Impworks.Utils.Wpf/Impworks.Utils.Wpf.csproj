@@ -1,30 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
-  <PropertyGroup>
-    <TargetFramework>net451</TargetFramework>
-      <RootNamespace>Impworks.Utils.Wpf</RootNamespace>
-      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-      <Authors>Impworks</Authors>
-      <Company />
-      <Product>Impworks.Utils.Wpf</Product>
-      <PackageProjectUrl>https://github.com/impworks/utils.wpf</PackageProjectUrl>
-      <RepositoryUrl>https://github.com/impworks/utils.wpf</RepositoryUrl>
-      <PackageTags>helpers, utils, converters, wpf</PackageTags>
-      <Description>A personal collection of helper utility methods for WPF projects.</Description>
-      <PackageId>Impworks.Utils.Wpf</PackageId>
-      <AssemblyName>Impworks.Utils.Wpf</AssemblyName>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net451;net6.0-windows</TargetFrameworks>
+        <RootNamespace>Impworks.Utils.Wpf</RootNamespace>
+        <UseWPF>true</UseWPF>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Impworks</Authors>
+        <Company />
+        <Product>Impworks.Utils.Wpf</Product>
+        <PackageProjectUrl>https://github.com/impworks/utils.wpf</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/impworks/utils.wpf</RepositoryUrl>
+        <PackageTags>helpers, utils, converters, wpf</PackageTags>
+        <Description>A personal collection of helper utility methods for WPF projects.</Description>
+        <PackageId>Impworks.Utils.Wpf</PackageId>
+        <AssemblyName>Impworks.Utils.Wpf</AssemblyName>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System.Windows" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="WindowsBase" />
-  </ItemGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net451'">
+        <DocumentationFile>bin\Release\net451\Impworks.Utils.Wpf.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net6.0-windows'">
+        <DocumentationFile>bin\Release\net6.0\Impworks.Utils.Wpf.xml</DocumentationFile>
+    </PropertyGroup>
 
 </Project>
